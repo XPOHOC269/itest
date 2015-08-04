@@ -32,9 +32,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
+					@if (!Auth::guest())
 					<li><a href="/sites">Список сайтов</a></li>
 					<li><a href="/create">Добавить сайт</a></li>
 					<li><a href="/monitoring">Состояние сайтов</a></li>
+					@endif
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
